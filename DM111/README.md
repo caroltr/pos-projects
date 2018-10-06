@@ -3,13 +3,6 @@
 ## URL do projeto publicado no Google App Engine:
 https://projeto-final-201501.appspot.com
 
-## Project ID do projeto publicado no Google App Engine
-477133612478
-
-## Usuário e senha de um usuário administrador cadastrado na aplicação:
-**Usuário**: caroltr.srs@gmail.com
-**Senha**: caroline
-
 ## URL de cada serviço desenvolvido, bem como os modelos de requisição e resposta de cada um deles:
 
 ### Serviço de usuário:
@@ -20,8 +13,8 @@ https://projeto-final-201501.appspot.com
 
     {
       "gcmToken": "",
-      "email": "caroltr.srs@gmail.com",
-      "password": "caroline",
+      "email": "user@email.com",
+      "password": "password",
       "role": "USER",
       "cpf": "123.456.789-10"
     }
@@ -31,8 +24,8 @@ https://projeto-final-201501.appspot.com
     {
         "id": 5629499534213120,
         "gcmToken": "",
-        "email": "caroltr.srs@gmail.com",
-        "password": "caroline",
+        "email": "user@email.com",
+        "password": "password",
         "lastLogin": 1524371723571,
         "lastGcmRegister": 1524330488935,
         "role": "USER",
@@ -40,7 +33,7 @@ https://projeto-final-201501.appspot.com
         "salesId": 0,
         "crmId": 0,
         "enabled": true,
-        "username": "caroltr.srs@gmail.com",
+        "username": "user@email.com",
         "authorities": [
             {
                 "authority": "USER"
@@ -52,15 +45,15 @@ https://projeto-final-201501.appspot.com
     }
 
 
-- **[GET]**		/api/users/byEmail?email=doralice@gmail.com
+- **[GET]**		/api/users/byEmail?email=user@email.com
 
 **Resposta:**
 
     {
         "id": 5649050225344512,
-        "gcmToken": "testeMudar",
-        "email": "doralice@gmail.com",
-        "password": "doralice",
+        "gcmToken": "token",
+        "email": "user@email.com",
+        "password": "password",
         "lastLogin": 1524326841438,
         "lastGcmRegister": 1524326841438,
         "role": "USER",
@@ -68,7 +61,7 @@ https://projeto-final-201501.appspot.com
         "salesId": 0,
         "crmId": 0,
         "enabled": true,
-        "username": "doralice@gmail.com",
+        "username": "user@email.com",
         "authorities": [
             {
                 "authority": "USER"
@@ -85,9 +78,9 @@ https://projeto-final-201501.appspot.com
 
     {
         "id": 5649050225344512,
-        "gcmToken": "testeMudar",
-        "email": "doralice@gmail.com",
-        "password": "doralice",
+        "gcmToken": "token",
+        "email": "user@email.com",
+        "password": "password",
         "lastLogin": 1524326841438,
         "lastGcmRegister": 1524326841438,
         "role": "USER",
@@ -95,7 +88,7 @@ https://projeto-final-201501.appspot.com
         "salesId": 0,
         "crmId": 0,
         "enabled": true,
-        "username": "doralice@gmail.com",
+        "username": "users@email.com",
         "authorities": [
             {
                 "authority": "USER"
@@ -114,8 +107,8 @@ https://projeto-final-201501.appspot.com
         {
             "id": 5629499534213120,
             "gcmToken": "",
-            "email": "caroltr.srs@gmail.com",
-            "password": "caroline",
+            "email": "user@email.com",
+            "password": "password",
             "lastLogin": 1524330488935,
             "lastGcmRegister": 1524330488935,
             "role": "ADMIN",
@@ -123,7 +116,7 @@ https://projeto-final-201501.appspot.com
             "salesId": 0,
             "crmId": 0,
             "enabled": true,
-            "username": "caroltr.srs@gmail.com",
+            "username": "user@email.com",
             "authorities": [
                 {
                     "authority": "ADMIN"
@@ -141,9 +134,9 @@ https://projeto-final-201501.appspot.com
 
     {
         "id": 5649050225344512,
-        "gcmToken": "testeMudar",
-        "email": "doralice@gmail.com",
-        "password": "doralice",
+        "gcmToken": "token",
+        "email": "user@email.com",
+        "password": "password",
         "lastLogin": 1524326841438,
         "lastGcmRegister": 1524326841438,
         "role": "USER",
@@ -151,7 +144,7 @@ https://projeto-final-201501.appspot.com
         "salesId": 0,
         "crmId": 0,
         "enabled": true,
-        "username": "doralice@gmail.com",
+        "username": "user@email.com",
         "authorities": [
             {
                 "authority": "USER"
