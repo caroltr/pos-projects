@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Incubadora neonatal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <p>
+    Monitoração dos parâmetros da incubadora.
+  </p>
+
+  <p style="text-align:center;">
+    <button ion-button color="secondary" outline icon-left (click)="goToTempPage()">
+      <ion-icon name='rainy' color="blue" ></ion-icon>  
+      Temperatura
+    </button>
+  </p>
+
+  <p style="text-align:center;">
+    <button ion-button color="secondary" outline icon-left (click)="goToLumPage()">
+      <ion-icon name='sunny' color="red" ></ion-icon>  
+      Luminosidade
+    </button>
+  </p>
+
+  
+    <ion-item>
+      <ion-label>Buzzer</ion-label>
+      <ion-toggle [(ngModel)]="buzzer" (ionChange)="notify($event)"></ion-toggle>
+    </ion-item>
+
+
+    <div *ngIf='!isLoading'>
+      <ion-card>
+        <ion-card-content>
+          Botão: {{dweet.with[0].content.botao}}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          Sensor de toque: {{dweet.with[0].content.toque}}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          Status: {{dweet.with[0].content.status}}
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+ 
+</ion-content>
