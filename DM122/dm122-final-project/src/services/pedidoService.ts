@@ -26,12 +26,12 @@ export class PedidoService {
     initializeFirebase() {
 
         const config = {
-            apiKey: "AIzaSyCXq9CoPsatKjyldlabSlANyYRuyr5joqA",
-            authDomain: "dm122-projeto-final-c559c.firebaseapp.com",
-            databaseURL: "https://dm122-projeto-final-c559c.firebaseio.com",
-            projectId: "dm122-projeto-final-c559c",
-            storageBucket: "dm122-projeto-final-c559c.appspot.com",
-            messagingSenderId: "1082534309123"
+            apiKey: "API_KEY",
+            authDomain: "AUTH_DOMAIN",
+            databaseURL: "URL",
+            projectId: "PROJECT_ID",
+            storageBucket: "BUCKET",
+            messagingSenderId: "SENDER_ID"
         };
 
         firebase.initializeApp(config);

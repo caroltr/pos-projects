@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class GCMSendMessage {
 
-    private static final String API_KEY = "AIzaSyC0eJ3DKvzL_de9fen67UIGTgfRGqE4EOs";
+    private static final String API_KEY = "API_KEY";
     private static final Logger log = Logger.getLogger("GCMSendMessage");
 
     /**

@@ -38,7 +38,7 @@ public class GCMRegister {
                     if (gcm == null) {
                         gcm = GoogleCloudMessaging.getInstance(context);
                     }
-                    regid = gcm.register("574033931406");
+                    regid = gcm.register("SENDER_ID");
                     //setRegistrationId(regid);
                     msg = regid;
 
