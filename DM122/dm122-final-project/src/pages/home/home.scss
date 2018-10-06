@@ -1,0 +1,33 @@
+page-home {
+
+    p {
+        font-size: 13px;
+        color: #505050;
+        font-weight: 300;
+    }
+    
+    .status-icon {
+        font-size: 30px; /* Set size whatever you want or delete this line */
+        color : #505050;
+        padding-right: 15px;
+      }
+
+      .title {
+          font-size: 20px;
+          padding-bottom: 4px;
+          color: #505050;
+          font-weight: 500;
+
+      }
+
+      .box-title {
+          display: inline;
+          font-weight: 500;
+        }
+
+    .box-content {
+        white-space: normal;
+        display: inline;
+    }
+      
+}

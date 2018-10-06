@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes do pedido</ion-title>
+
+    <ion-buttons end>
+        <button ion-button icon-only (click)="save()">
+          <ion-icon name="checkmark"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+<div ng-app="item">
+  
+<h1 class="title">{{item.vendedor}}</h1>
+
+  <div class="box">
+    <p class="box-title">ID do pedido: </p>
+    <p class="box-content">{{item.idPedido}}</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Data de emissão: </p>
+    <p class="box-content">{{item.dataEmissao}}</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Data de atualização: </p>
+    <p class="box-content">{{item.dataAtualizacao}}</p>
+  </div>
+
+  <div class="box">
+    <p class="box-title">Frete: </p>
+    <p class="box-content">{{item.frete}}</p>
+  </div>
+    
+  <div class="box">
+    <p class="box-title">Transportadora: </p>
+    <p class="box-content">{{item.transportadora}}</p>
+  </div>
+    
+  <div class="box">
+    <p class="box-title">Status: </p>
+    <ion-select class="option" okText="OK" cancelText="Cancelar">
+      <ion-option *ngFor="let key of keys" (ionSelect)="selectedStatus(key)" [selected] = "item.status == key" [value]="key" >{{key}}</ion-option>
+   </ion-select>
+  </div>
+
+  </div>
+
+</ion-content>

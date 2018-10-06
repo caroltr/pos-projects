@@ -1,0 +1,36 @@
+page-detalhes-pedido {
+
+    // Fix whole view clickable
+    .item-cover {
+        width: 0;
+        height: 0;
+    }
+
+    p, .option {
+        font-size: 13px;
+        color: #505050;
+        font-weight: 300;
+    }
+
+    .title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        color: #505050;
+        font-weight: 500;
+
+    }
+
+    .box-title {
+        display: inline;
+        font-weight: 500;
+    }
+
+    .box-content {
+        display: inline;
+        font-weight: 300;
+    }
+
+    .box {
+        padding-bottom: 5px;
+    }
+}

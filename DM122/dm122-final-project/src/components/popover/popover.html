@@ -1,0 +1,10 @@
+<!-- Generated template for the PopoverComponent component -->
+<ion-content>
+<ion-item-group>
+    <ion-item-divider color="light"> Filtrar status</ion-item-divider>
+  <ion-item *ngFor="let item of items" (click)="itemClick(item)" [ngClass]="item == statusFilter ? 'isSelected' : 'isNotSelected'">
+    <p>{{item}}</p>
+  </ion-item>
+  <ion-item [hidden]="statusFilter == null" (click)="itemClick(0)"><p class="delete">Remover filtro<p></ion-item>
+  </ion-item-group>
+</ion-content>

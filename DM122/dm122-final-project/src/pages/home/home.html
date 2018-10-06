@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>    
+    <ion-title>Meus Pedidos</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showFilterPopover($event)">
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list *ngFor="let pedido of displayPedidos" no-lines>
+    <ion-item (click)="itemClicked(pedido)">
+
+    <div item-start [ngSwitch]="pedido.status" >
+      <ion-icon class="status-icon" *ngSwitchCase="'Processando'" name="cog" ></ion-icon>
+      <ion-icon class="status-icon" *ngSwitchCase="'Executando'" name="play"></ion-icon>
+      <ion-icon class="status-icon" *ngSwitchCase="'Transporte'" name="car"></ion-icon>
+      <ion-icon class="status-icon" *ngSwitchDefault name="alert"></ion-icon>
+    </div>
+
+      <h1 class="title">{{pedido.vendedor}}</h1>
+      
+      <div>
+        <p class="box-title">ID do pedido: </p>
+        <p class="box-content">{{pedido.idPedido}}</p>
+      </div>
+      
+      <div>
+      <p class="box-title">Última atualização: </p>
+      <p class="box-content">{{pedido.dataAtualizacao}}</p>
+    </div>
+      
+      <div>
+      <p class="box-title">Status:</p>
+      <p class="box-content">{{pedido.status}}</p>
+    </div>
+
+    </ion-item>
+  </ion-list>
+
+</ion-content>
