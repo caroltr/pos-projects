@@ -1,3 +1,51 @@
 <resources>
-    <string name="app_name">DM114</string>
+    <string name="app_name">DM114 Projeto final</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Login screen -->
+    <string name="login">Login</string>
+    <string name="login_hint">Entre com seu login</string>
+    <string name="password">Senha</string>
+    <string name="password_hint">Entre com sua senha</string>
+    <string name="enter">Entrar</string>
+
+    <!-- Order notification info screen -->
+    <string name="order_info_title">Seu pedido mudou de status!</string>
+    <string name="order">Pedido:</string>
+    <string name="email">Email:</string>
+    <string name="status">Status:</string>
+    <string name="reason">Motivo:</string>
+
+    <!-- Order details screen -->
+    <string name="order_details_title">Detalhes do pedido</string>
+    <string name="freight">Valor do frete:</string>
+    <string name="products">Produtos:</string>
+    <string name="amount_items">Quantidade de itens:</string>
+
+    <!-- Orders screen -->
+    <string name="orders_title">Pedidos</string>
+
+    <!-- Product notification info screen -->
+    <string name="product_info_title">Seu produto de interesse abaixou o preço!</string>
+    <string name="id">ID: </string>
+    <string name="code">Código: </string>
+    <string name="price">Preço: </string>
+
+    <!-- Products of interest screen -->
+    <string name="products_title">Meus produtos de interesse</string>
+    <string name="name">Nome: </string>
+    <string name="product_id"> • Id do produto:</string>
+
+    <!-- Add product screen -->
+    <string name="product_id_hint">ID do produto</string>
+    <string name="product_price_hint">Preço de interesse</string>
+    <string name="all_products_title">Selecione um produto para adicionar</string>
+    <string name="tv_current_price">Preço atual:</string>
+    <string name="desired_price">Preço desejado:</string>
+    <string name="new_price">Novo preço:</string>
+    <string name="description">Descrição:</string>
+    <string name="old_price">Preço anterior:</string>
+
 </resources>
